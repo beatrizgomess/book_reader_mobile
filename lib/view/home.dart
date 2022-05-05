@@ -12,18 +12,17 @@ class Login extends StatelessWidget {
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: const [
+                children: [
                   Image(
                     image: AssetImage('assets/book-stack.png'),
                     height: 159,
                     width: 159,
                   ),
-                  Text(
-                    "Books Reader",
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontFamily: 'Lucida Console',
-                      fontSize: 25,
+                  ListTile(
+                    title: Text(
+                      "Books Reader",
+                      style: Theme.of(context).textTheme.headline1,
+                                
                     ),
                   ),
                 ],
@@ -48,27 +47,36 @@ class Login extends StatelessWidget {
                 width: 500,
                 color: Colors.white,
               ),
-
+             
               const SizedBox(
-                height: 70,
+                height: 50,
               ),
 
-              TextFormField(
-                decoration: const InputDecoration(
-                  contentPadding: EdgeInsets.all(5),
-                  fillColor: Colors.white,
-                  filled: true,
-                  label: Text(
-                    'Email',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontFamily: 'Lucida Console',
+               const Text("Uma nova forma de registrar suas leituras",
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 18),
+              ),
+
+              const SizedBox(
+                height: 50,
+              ),
+
+              SingleChildScrollView(
+                child: TextFormField(
+                  decoration: const InputDecoration(
+                    contentPadding: EdgeInsets.all(5),
+                    fillColor: Colors.white,
+                    filled: true,
+                    label: Text(
+                      'Email',
+                      
                     ),
-                  ),
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide.none,
-                    borderRadius: BorderRadius.all(
-                      Radius.circular(10),
+                    enabledBorder: OutlineInputBorder(
+                      borderSide: BorderSide.none,
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(10),
+                      ),
                     ),
                   ),
                 ),
