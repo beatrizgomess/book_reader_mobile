@@ -55,6 +55,9 @@ class Login extends StatelessWidget {
 
               TextFormField(
                 decoration: const InputDecoration(
+                  focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide.none,
+                      borderRadius: BorderRadius.all(Radius.circular(10))),
                   contentPadding: EdgeInsets.all(5),
                   fillColor: Colors.white,
                   filled: true,
