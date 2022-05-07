@@ -62,6 +62,7 @@ class Login extends StatelessWidget {
                 height: 50,
               ),
 
+
               SingleChildScrollView(
                 child: TextFormField(
                   decoration: const InputDecoration(
@@ -71,6 +72,21 @@ class Login extends StatelessWidget {
                     label: Text(
                       'Email',
                       
+
+              TextFormField(
+                decoration: const InputDecoration(
+                  focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide.none,
+                      borderRadius: BorderRadius.all(Radius.circular(10))),
+                  contentPadding: EdgeInsets.all(5),
+                  fillColor: Colors.white,
+                  filled: true,
+                  label: Text(
+                    'Email',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontFamily: 'Lucida Console',
+
                     ),
                     enabledBorder: OutlineInputBorder(
                       borderSide: BorderSide.none,
