@@ -1,3 +1,4 @@
+import 'package:book_reader/constants/text_constantes.dart';
 import 'package:book_reader/view/home.dart';
 import 'package:flutter/material.dart';
 
@@ -13,9 +14,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'BookRead',
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
-        home: Login());
+        theme: BookReaderTextThemes.bookReaderTheme,
+        home: Login()
+        );
+       
   }
 }
